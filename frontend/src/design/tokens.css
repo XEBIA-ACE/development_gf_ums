@@ -1,0 +1,24 @@
+/* Design tokens from the approved style guide. Do not add new colors here. */
+:root {
+  --color-primary: #1e3a8a; /* color.primary / color.primary.blue */
+  --color-on-primary: #ffffff; /* color.on-primary */
+  --color-secondary: #6b7280; /* color.secondary.gray */
+  --color-accent: #10b981; /* color.accent.green */
+  --color-background: #f3f4f6; /* color.background.light */
+  --color-text: #111827; /* color.text.dark */
+  --color-error: #ef4444; /* color.error / color.error.red */
+  --color-info: #3b82f6; /* color.info.blue */
+
+  --font-family: 'Inter', sans-serif;
+
+  /* Component tokens. GAP: exact values for shadow/hover/disabled are not in the spec;
+     derived from approved colors only. */
+  --button-primary-bg: var(--color-primary);
+  --button-primary-text: var(--color-on-primary);
+  --button-primary-shadow: 0 1px 2px color-mix(in srgb, var(--color-text) 25%, transparent);
+  --button-primary-hover-bg: color-mix(in srgb, var(--color-primary) 85%, var(--color-text));
+  --button-primary-disabled-bg: var(--color-secondary);
+  --input-default-border: var(--color-secondary);
+  --input-focus-border: var(--color-primary);
+  --input-default-text: var(--color-text);
+}
